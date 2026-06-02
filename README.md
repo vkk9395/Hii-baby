@@ -1,1 +1,282 @@
-# Hii-baby
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hey Baby ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;background:#050505;color:#f4d37a;
+font-family:Georgia,serif;overflow-x:hidden;scroll-behavior:smooth;
+}
+.stars{
+position:fixed;inset:0;pointer-events:none;opacity:.18;
+background-image:radial-gradient(#fff 1px,transparent 1px);
+background-size:45px 45px;
+animation:drift 40s linear infinite;
+}
+@keyframes drift{from{transform:translateY(0)}to{transform:translateY(45px)}}
+.heart{position:fixed;top:-20px;font-size:22px;animation:fall 4s linear forwards}
+@keyframes fall{to{transform:translateY(110vh)}}
+.scene{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:30px;
+text-align:center;
+}
+.hero{
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.8)),url('hand.jpg') center/cover;
+}
+h1{font-size:3rem;margin:0}
+h2{font-size:2rem}
+p{max-width:800px;line-height:1.8;font-size:1.15rem}
+.gold{color:#ffd76a}
+.btn{
+display:inline-block;
+padding:14px 28px;
+border:1px solid #ffd76a;
+border-radius:40px;
+color:#ffd76a;
+text-decoration:none;
+margin-top:20px;
+}
+.card{
+background:rgba(255,215,106,.06);
+border:1px solid rgba(255,215,106,.25);
+padding:24px;
+border-radius:18px;
+max-width:900px;
+width:100%;
+}
+img{
+max-width:95%;
+border-radius:18px;
+box-shadow:0 0 30px rgba(255,215,106,.2);
+}
+.fade{opacity:0;transform:translateY(40px);transition:1s}
+.fade.show{opacity:1;transform:none}
+.counter{
+font-size:1.4rem;
+line-height:2;
+}
+.hiddenBox{display:none;margin-top:20px}
+.final{font-size:1.3rem;line-height:2}
+</style>
+</head>
+<body>
+
+<div class="stars"></div>
+
+<section class="scene hero">
+<h1>Hey Baby ❤️</h1>
+<p id="typewriter"></p>
+<a href="#chapter1" class="btn">✨ Begin Our Story</a>
+</section>
+
+<section id="chapter1" class="scene fade">
+<div class="card">
+<h2>💌 The Beginning</h2>
+<img src="first-chat.jpg" alt="First Chat">
+<p>
+9 July 2021 ❤️<br><br>
+A simple message.<br>
+An ordinary day.<br>
+Yet somehow it became one of my favourite memories.<br><br>
+"Hey Krish, Dimple here."<br><br>
+Funny how one notification changed everything.
+</p>
+</div>
+</section>
+
+<section class="scene fade">
+<div class="card">
+<h2>❤️ 27 August 2021</h2>
+<p style="font-size:2rem">11:22 AM</p>
+<p>
+You said,<br><br>
+"I love you."<br><br>
+Not like a movie scene.<br>
+Not with fireworks.<br><br>
+Just naturally.<br><br>
+As if those words had been waiting for us all along.
+</p>
+</div>
+</section>
+
+<section class="scene fade">
+<div class="card">
+<h2>💕 29 August 2021</h2>
+<p>The day we became us.</p>
+<div class="counter" id="counter"></div>
+</div>
+</section>
+
+<section class="scene fade">
+<div class="card">
+<h2>✈️ Our Meetings</h2>
+<p>
+📍 Chennai — 2 July 2022<br><br>
+After all the messages and calls... there you were.<br><br>
+📍 Surat — 31 January 2024<br><br>
+More smiles. More memories. More reasons to fall for you.<br><br>
+📍 20 November 2025<br><br>
+Another meeting.<br>
+Another memory I wish time had slowed down for.
+</p>
+<p>
+Some people travel for vacations.<br>
+I travelled to see my favourite person. ❤️
+</p>
+</div>
+</section>
+
+<section class="scene fade">
+<div class="card">
+<h2>🤝 My Favourite Picture</h2>
+<img src="hand.jpg" alt="Memory">
+<p>
+Everyone else sees two hands.<br><br>
+
+I see the moment I forgot about the world.<br>
+I see comfort.<br>
+I see home.<br>
+I see the girl who made ordinary days feel special.<br><br>
+
+❤️<br><br>
+
+And if I could keep one moment forever...<br>
+it would probably be this one.<br><br>
+
+Because letting go of your hand was difficult...<br>
+but letting go of the memories was impossible.<br><br>
+
+❤️<br><br>
+
+The hand I held that day wasn't just a hand.<br>
+It was my favourite place to be.
+</p>
+</div>
+</section>
+
+<section class="scene fade">
+<div class="card">
+<h2>🌙 Things You Never Realized</h2>
+<p>
+❤️ Somewhere between all those good mornings and good nights... you became my day.<br><br>
+
+❤️ Do you remember how impossible it was to end a call?<br>
+One minute we'd say good night...<br>
+and somehow we'd still be talking twenty minutes later.<br><br>
+
+❤️ Seeing your face on a screen always felt like coming home.<br><br>
+
+❤️ You became my favourite notification.<br><br>
+
+❤️ Hearing your voice became part of my night.<br><br>
+
+❤️ Video calls stopped being calls.<br>
+They became home.
+</p>
+</div>
+</section>
+
+<section class="scene fade">
+<div class="card">
+<h2>💌 Open Only If You're Smiling</h2>
+<button class="btn" onclick="document.getElementById('secret').style.display='block'">Open ❤️</button>
+<div id="secret" class="hiddenBox">
+<p>
+Hey Baby ❤️<br><br>
+If you're reading this...<br>
+then hopefully you're smiling.<br><br>
+And if you're smiling...<br>
+then maybe for a few minutes,<br>
+we travelled back in time together.<br><br>
+Back to random laughter.<br>
+Back to late-night calls.<br>
+Back to messages that made us smile at our phones.<br><br>
+That's all I wanted.<br><br>
+To remind you how beautiful our story has been. ❤️
+</p>
+</div>
+</div>
+</section>
+
+<section class="scene fade">
+<div class="card final">
+<p>
+Some stories are measured in days.<br>
+Ours was measured in memories. ❤️<br><br>
+
+Some people walk into your life<br>
+and quietly change everything.<br><br>
+
+Thank you for every laugh.<br>
+Every call.<br>
+Every meeting.<br>
+Every memory.<br><br>
+
+And if someone asked me what my favourite chapter of life was...<br><br>
+
+I'd already know the answer.<br><br>
+
+It started with:<br><br>
+
+"Hey Krish, Dimple here."<br><br>
+
+❤️<br><br>
+
+And it became the most beautiful story I've ever lived.<br><br>
+
+Forever Yours,<br>
+Krish ❤️
+</p>
+</div>
+</section>
+
+<script>
+const text="Before distance. Before pressure. Before fear. There was us. ❤️";
+let i=0;
+function type(){
+ if(i<text.length){
+  document.getElementById("typewriter").innerHTML+=text.charAt(i);
+  i++;
+  setTimeout(type,60);
+ }
+}
+type();
+
+function updateCounter(){
+ let start=new Date("2021-08-29T00:00:00");
+ let now=new Date();
+ let diff=now-start;
+ let days=Math.floor(diff/(1000*60*60*24));
+ let years=Math.floor(days/365);
+ let months=Math.floor((days%365)/30);
+ let rem=days-(years*365)-(months*30);
+ document.getElementById("counter").innerHTML=
+ "❤️ Together For ❤️<br>"+years+" Years<br>"+months+" Months<br>"+rem+" Days";
+}
+updateCounter();
+
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+});
+document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
+
+for(let i=0;i<70;i++){
+ let h=document.createElement('div');
+ h.className='heart';
+ h.innerHTML='❤️';
+ h.style.left=Math.random()*100+'vw';
+ document.body.appendChild(h);
+}
+setTimeout(()=>document.querySelectorAll('.heart').forEach(h=>h.remove()),5000);
+</script>
+
+</body>
+</html># Hii-baby
